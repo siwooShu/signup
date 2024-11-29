@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <title>SignUp</title>
+    <link rel="stylesheet" href="./signup.css" />
+    <script src="./signup.js"></script>
+  </head>
+  <body>
+    <div class="outerbox">
+      <div class="title">회원가입</div>
+      <div class="userInformation">
+        <input
+          class="info"
+          type="text"
+          id="email"
+          placeholder="이메일을 입력해주세요."
+        />
+        <div class="check" id="check-email"></div>
+        <input
+          class="info"
+          type="text"
+          id="name"
+          placeholder="이름을 입력해 주세요."
+        />
+        <div class="check" id="check-name"></div>
+        <input
+          class="info"
+          type="password"
+          id="pw1"
+          placeholder="비밀번호를 입력해 주세요."
+        />
+        <div class="check" id="check-pw1"></div>
+        <input
+          class="info"
+          type="password"
+          id="pw2"
+          placeholder="비밀번호를 다시 입력해 주세요."
+        />
+        <div class="check" id="check-pw2"></div>
+      </div>
+      <div class="phone">
+        <input
+          oninput="changeFocus1(); onlyNumber(this);"
+          type="tel"
+          id="num1"
+          maxlength="3"
+          inputmode="numeric"
+        />
+        <div class="hyphen"></div>
+        <input
+          oninput="changeFocus2(); onlyNumber(this);"
+          type="tel"
+          id="num2"
+          maxlength="4"
+          inputmode="numeric"
+        />
+        <div class="hyphen"></div>
+        <input
+          oninput="onlyNumber(this);"
+          type="tel"
+          id="num3"
+          maxlength="4"
+          inputmode="numeric"
+        />
+      </div>
+      <div class="auth">
+        <div class="auth-number" id="auth-num">000000</div>
+        <button
+          class="auth-button"
+          id="auth-btn"
+          disabled="true"
+          onclick="authentication(); timerStart();"
+        >
+          인증번호 전송
+        </button>
+      </div>
+      <div class="auth-success">
+        <div class="success-time" id="timer">3:00</div>
+        <button
+          class="success-button"
+          id="success-btn"
+          disabled="true"
+          onclick="disabledAuth()"
+        >
+          인증 완료
+        </button>
+      </div>
+      <select class="region info" name="region" id="select-region">
+        <option value="none" selected="true" disabled>
+          지역을 선택하세요.
+        </option>
+        <option value="gyeonggi">경기도</option>
+        <option value="seoul">서울</option>
+        <option value="busan">부산</option>
+      </select>
+      <div class="check" id="check-region"></div>
+      <div class="gender">
+        <input type="radio" name="gender" /><span id="female"> 여성</span>
+        <input type="radio" name="gender" /><span id="male"> 남성</span>
+      </div>
+      <div class="check gender-check" id="check-gender"></div>
+      <div class="divideLine"></div>
+      <button
+        disabled="true"
+        class="signup-button"
+        id="signup-btn"
+        onclick="signupVerification()"
+      >
+        가입하기
+      </button>
+    </div>
+  </body>
+</html>
