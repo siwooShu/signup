@@ -1,0 +1,227 @@
+* {
+  box-sizing: border-box;
+  margin: 0px;
+}
+
+input {
+  padding-left: 15px;
+}
+
+.outerbox {
+  width: 540px;
+  height: max-content;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #aacdff;
+  border-radius: 20px;
+  box-shadow: 7px 7px 39px #0068ff40;
+  padding: 50px 78px;
+  margin: 50px;
+
+  .title {
+    width: 380px;
+    height: 47px;
+    font-size: 32px;
+    line-height: 47.36px;
+    font-weight: 700;
+    color: #0068ff;
+    margin-bottom: 30px;
+  }
+
+  .userInformation {
+    width: max-content;
+    height: max-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .check {
+    width: max-content;
+    height: min-content;
+    color: rgba(222, 25, 25, 0.995);
+    font-size: 12px;
+  }
+
+  .info {
+    width: 380px;
+    height: 60px;
+    margin-top: 20px;
+    border: 1px solid #d2d2d2;
+    border-radius: 7px;
+    font-size: 16px;
+    font-weight: 400;
+  }
+
+  input::placeholder {
+    color: #797979;
+  }
+
+  .info:focus {
+    border: 1px solid #0068ff;
+    outline: none;
+  }
+
+  .phone {
+    width: 380px;
+    height: fit-content;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+
+    margin-bottom: 20px;
+
+    .hyphen {
+      width: 11px;
+      border: 0.5px solid black;
+    }
+  }
+
+  .phone input {
+    width: 100px;
+    height: 40px;
+    border: 1px solid #d2d2d2;
+    border-radius: 7px;
+  }
+
+  .auth {
+    margin-bottom: 20px;
+  }
+
+  .auth,
+  .auth-success {
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+    font-size: 18px;
+    color: #0068ff;
+    line-height: 26.64px;
+    font-weight: 400;
+
+    .auth-number,
+    .success-time {
+      margin-right: 21px;
+    }
+
+    .auth-button {
+      width: 120px;
+      height: 40px;
+      border-radius: 7px;
+      border: 1px solid #d2d2d2;
+      background-color: white;
+      color: #0068ff;
+      font-size: 16px;
+    }
+
+    .auth-button:disabled {
+      background-color: #fbfbfb;
+      color: #aeacac;
+      pointer-events: none;
+    }
+
+    .auth-button:active {
+      border: none;
+      background-color: #0068ff;
+      color: white;
+    }
+
+    .success-button {
+      width: 120px;
+      height: 40px;
+      border-radius: 7px;
+      border: 1px solid #d2d2d2;
+      background-color: white;
+      color: #0068ff;
+      font-size: 16px;
+    }
+
+    .success-button:disabled {
+      background-color: #fbfbfb;
+      color: #aeacac;
+      pointer-events: none;
+    }
+
+    .success-button:active {
+      border: none;
+      background-color: #0068ff;
+      color: white;
+    }
+  }
+
+  .region {
+    width: 380px;
+    height: 60px;
+    border-radius: 7px;
+    border: 1px solid #d2d2d2;
+    font-size: 16px;
+    color: #797979;
+    padding-left: 10px;
+  }
+
+  .gender {
+    margin-top: 30px;
+    width: 180px;
+    height: 23.94px;
+    font-size: 16px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+
+  [type="radio"] {
+    /* appearance: none; */
+    border-radius: 50px;
+    margin-right: 5px;
+    width: 20px;
+    height: 20px;
+    /* background-color: #ebebeb;
+    border: 1px solid #d2d2d2; */
+  }
+
+  .gender span {
+    margin-right: 25px;
+  }
+
+  .gender-check {
+    margin-bottom: 30px;
+  }
+
+  .divideLine {
+    width: 380px;
+    height: 1px;
+    background-color: #e6e6e6;
+    margin-bottom: 20px;
+  }
+
+  .signup-button {
+    width: 380px;
+    height: 75px;
+    border-radius: 10px;
+    font-size: 18px;
+    font-weight: 400;
+    background-color: white;
+    border: 1px solid #0068ff;
+    color: #0068ff;
+  }
+
+  .signup-button:disabled {
+    background-color: #fbfbfb;
+    border: 1px solid #d2d2d2;
+    color: #aeacac;
+    pointer-events: none;
+  }
+
+  .signup-button:active {
+    border: none;
+    background-color: #0068ff;
+    color: white;
+  }
+}
